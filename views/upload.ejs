@@ -1,0 +1,15 @@
+<%- include header %>
+<h3>Upload</h3>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+
+  <label for="comment_title">Titel: </label>
+  <input type="text" id="comment_title"  name="comment_title" value="">
+  <input type="file" name="imageFile" value="">
+  <button>Upload!</button>
+  
+</form>
+
+
+
+<%- include footer %>

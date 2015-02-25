@@ -1,0 +1,113 @@
+body {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #dce0e9;
+	font-family: sans-serif;		
+}
+#username {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.top_nav_loggedin{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row-wrap;
+	box-shadow: 0px -1px 5px 0px rgba(50, 50, 50, 0.75);
+	margin-bottom: 1em;
+}
+
+.noshadow{
+	box-shadow: none; !important 
+}
+
+
+.top_nav_not_loggedin{
+	display: flex;
+	order: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row-wrap;
+	box-shadow: 0px -1px 5px 0px rgba(50, 50, 50, 0.75);
+	margin-bottom: 1em;
+}
+
+
+
+ img{
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+	box-shadow: rgba(0,0,0,0.4) 0 0 16px;
+}
+
+
+
+img:hover {
+	opacity: 0.85;
+}
+
+.bttn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.bttn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.bttn:active {
+	position:relative;
+	top:1px;
+}
+
+footer {
+	position: bottom;
+}
+
+
+@media only screen and (min-width: 40em) {
+
+	body{ 
+			max-width: 50%;
+		}
+
+
+}
+

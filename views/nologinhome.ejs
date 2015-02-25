@@ -1,0 +1,23 @@
+<%- include header %>
+
+<div class="top_nav_loggedin">
+	<p>Hello <span id="username">geust</span></p>
+	<a href="/login" class="bttn">login</a>
+	<h1>SHARE. PHOTOS. NOW</h1>
+	<a href="/register" class="bttn">Register</a>
+
+
+</div>
+
+
+	<%for (i=0; i < photos.length; i++){ %>
+		<div class="pictures">
+			<h2><%=photos[i].caption%></h2>
+			<a href="upload/<%=photos[i].id%>">
+				<img src="upload/<%=photos[i].filename%>">
+			</a>
+		</div>
+
+	<%};%>
+
+<%- include footer %>

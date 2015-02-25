@@ -1,0 +1,13 @@
+<%- include header %>
+
+<h2>List of users</h2>
+	<%for (i=0; i < users.length; i++){ %>
+		<div class="userlist">
+		<p><%=users[i].name%></p>
+		</div>
+
+	<%};%>
+
+
+
+<%- include footer %>

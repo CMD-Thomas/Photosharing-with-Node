@@ -1,0 +1,23 @@
+ <%- include header %>
+
+<h1><%=photos[0].comment%></h1>
+
+<img src="<%=photos[0].filename%>">
+
+
+
+
+<% for(i=1; i < photos.length; i++ ){ %>	
+  <div class="comment-section"><p>#<%=i%> <%=photos[i].comment%></p></div>
+<% } %>
+
+
+    <div class="comment-form">
+        <form action="/comment" method="post">
+            <label for="comment">Commentaar</label>
+            <input type="text" id="comment" name="comment" value="">
+            <button type="submit">Vestuur!</button>
+        </form>
+    </div>
+
+<%- include footer %>
